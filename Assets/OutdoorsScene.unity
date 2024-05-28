@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 2260.0537, g: 2400.2517, b: 3494.9155, a: 1}
+  m_IndirectSpecularColor: {r: 2258.6086, g: 2398.905, b: 3493.4963, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 114327644}
   - component: {fileID: 114327643}
   - component: {fileID: 114327642}
-  - component: {fileID: 114327641}
   m_Layer: 0
   m_Name: frasco4
   m_TagString: Untagged
@@ -158,20 +157,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212445633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114327641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114327639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15e29ae273671f0e98e85814f2275984, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Nitrogenio
-  value: n
 --- !u!65 &114327642
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -472,7 +457,6 @@ GameObject:
   - component: {fileID: 189382527}
   - component: {fileID: 189382526}
   - component: {fileID: 189382525}
-  - component: {fileID: 189382524}
   m_Layer: 0
   m_Name: frasco1
   m_TagString: Untagged
@@ -495,20 +479,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212445633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &189382524
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 189382522}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15e29ae273671f0e98e85814f2275984, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Carbono
-  value: c
 --- !u!65 &189382525
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -611,6 +581,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1694301988}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &403597357 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 224733412269388697, guid: 8e011941c0f24c07ca396dec17d884a2,
+    type: 3}
+  m_PrefabInstance: {fileID: 4741836221573149273}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &432432459
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,7 +782,6 @@ GameObject:
   - component: {fileID: 1618479819}
   - component: {fileID: 1618479818}
   - component: {fileID: 1618479817}
-  - component: {fileID: 1618479816}
   m_Layer: 0
   m_Name: frasco2
   m_TagString: Untagged
@@ -829,20 +804,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212445633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1618479816
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1618479814}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15e29ae273671f0e98e85814f2275984, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Hidrogenio
-  value: h
 --- !u!65 &1618479817
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -945,6 +906,7 @@ Transform:
   m_Children:
   - {fileID: 208159909}
   - {fileID: 1492854025}
+  - {fileID: 403597357}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1704297141
@@ -959,7 +921,6 @@ GameObject:
   - component: {fileID: 1704297146}
   - component: {fileID: 1704297145}
   - component: {fileID: 1704297144}
-  - component: {fileID: 1704297143}
   m_Layer: 0
   m_Name: frasco3
   m_TagString: Untagged
@@ -982,20 +943,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1212445633}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1704297143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1704297141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15e29ae273671f0e98e85814f2275984, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: Oxigenio
-  value: o
 --- !u!65 &1704297144
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1306,10 +1253,6 @@ MonoBehaviour:
   frasco2: {fileID: 1618479814}
   frasco3: {fileID: 1704297141}
   frasco4: {fileID: 114327639}
-  El1: {fileID: 189382524}
-  El2: {fileID: 1618479816}
-  El3: {fileID: 1704297143}
-  El4: {fileID: 114327641}
 --- !u!1 &1876772974
 GameObject:
   m_ObjectHideFlags: 0
@@ -1459,6 +1402,74 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &4741836221573149273
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1694301988}
+    m_Modifications:
+    - target: {fileID: 224733412269388697, guid: 8e011941c0f24c07ca396dec17d884a2,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224733412269388697, guid: 8e011941c0f24c07ca396dec17d884a2,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224733412269388697, guid: 8e011941c0f24c07ca396dec17d884a2,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224733412269388697, guid: 8e011941c0f24c07ca396dec17d884a2,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224733412269388697, guid: 8e011941c0f24c07ca396dec17d884a2,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224733412269388697, guid: 8e011941c0f24c07ca396dec17d884a2,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224733412269388697, guid: 8e011941c0f24c07ca396dec17d884a2,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224733412269388697, guid: 8e011941c0f24c07ca396dec17d884a2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224733412269388697, guid: 8e011941c0f24c07ca396dec17d884a2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224733412269388697, guid: 8e011941c0f24c07ca396dec17d884a2,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5983876043242839078, guid: 8e011941c0f24c07ca396dec17d884a2,
+        type: 3}
+      propertyPath: m_Name
+      value: SoundController
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e011941c0f24c07ca396dec17d884a2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

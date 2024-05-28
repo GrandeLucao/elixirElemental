@@ -7,7 +7,6 @@ using UnityEngine.EventSystems;
 public class clickObject : MonoBehaviour
 {
     public GameObject frasco1,frasco2,frasco3,frasco4;
-    public Elements El1,El2,El3,El4;
     
     void Start()
     {
@@ -20,16 +19,16 @@ public class clickObject : MonoBehaviour
             if(Input.GetMouseButtonDown(0)){
                 RaycastHit hit;
                 if(frasco1==getClickedObject(out  hit)){
-                    El1.selected();
+                    
                 }
                 if(frasco2==getClickedObject(out  hit)){
-                    El2.selected();
+                    
                 }
                 if(frasco3==getClickedObject(out  hit)){
-                    El3.selected();
+                    
                 }
                 if(frasco4==getClickedObject(out  hit)){
-                    El4.selected();
+                    
                 }
             }
         

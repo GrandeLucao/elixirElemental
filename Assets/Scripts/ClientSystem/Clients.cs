@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Mixture : MonoBehaviour
+public class Clients : MonoBehaviour
 {
-    //array 3 objects
+    // Start is called before the first frame update
     void Start()
     {
         
@@ -16,8 +16,5 @@ public class Mixture : MonoBehaviour
         
     }
 
-    public void Mixturing(){
-        //button
-        //turn off add elements
-    }
+    //REset timer on gameCont,select mixture
 }
