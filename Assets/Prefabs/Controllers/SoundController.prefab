@@ -52,3 +52,87 @@ MonoBehaviour:
     spatialBlend: 0
     loop: 1
     source: {fileID: 0}
+  - name: Cald1
+    clip: {fileID: 8300000, guid: 82e9b5823ee05a5e8aff4aaaf2050d62, type: 3}
+    volume: 1
+    panStereo: 0
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: Cald2
+    clip: {fileID: 8300000, guid: 09cf1dd46669089cc93445de19accaae, type: 3}
+    volume: 1
+    panStereo: 0
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: pote1
+    clip: {fileID: 8300000, guid: 7be17769b71178ddb9fc74fd2d8c90d3, type: 3}
+    volume: 1
+    panStereo: 0
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: pote2
+    clip: {fileID: 8300000, guid: 26be5a314ac2c46f1aa1297191f0ea46, type: 3}
+    volume: 1
+    panStereo: 0
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: pote3
+    clip: {fileID: 8300000, guid: 5160c6850b822dfc9b2641845ea76dc5, type: 3}
+    volume: 1
+    panStereo: 0
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: pote4
+    clip: {fileID: 8300000, guid: 4c382b46a40bb7a36981591d3115b7e3, type: 3}
+    volume: 1
+    panStereo: 0
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: pote5
+    clip: {fileID: 8300000, guid: bb9572ec5d959392c85a11054159604b, type: 3}
+    volume: 1
+    panStereo: 0
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: pote6
+    clip: {fileID: 8300000, guid: ea8e8104986ec03a1a80eee7d1c90cef, type: 3}
+    volume: 1
+    panStereo: 0
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: magia
+    clip: {fileID: 8300000, guid: 350882174a68e8f379fbc37e1983863a, type: 3}
+    volume: 1
+    panStereo: 0
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: livro1
+    clip: {fileID: 8300000, guid: 0e0cd95923079650694ec4fba2bd9ca0, type: 3}
+    volume: 1
+    panStereo: 0
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: livro2
+    clip: {fileID: 8300000, guid: 3002e82d7aef19f128b15429d0070b63, type: 3}
+    volume: 1
+    panStereo: 0
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}
+  - name: talvez
+    clip: {fileID: 8300000, guid: 3f64a1977ffd6edbaa16143bba32b994, type: 3}
+    volume: 1
+    panStereo: 0
+    spatialBlend: 0
+    loop: 0
+    source: {fileID: 0}

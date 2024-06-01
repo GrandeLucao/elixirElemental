@@ -6,6 +6,8 @@ using UnityEngine.EventSystems;
 
 public class clickObject : MonoBehaviour
 {
+    public MixData mixDT;
+    public int[] mixtureElem=new int[]{2,0,0};
     public GameObject frasco1,frasco2,frasco3,frasco4;
     
     void Start()
@@ -19,9 +21,13 @@ public class clickObject : MonoBehaviour
             if(Input.GetMouseButtonDown(0)){
                 RaycastHit hit;
                 if(frasco1==getClickedObject(out  hit)){
-                    
+                    FindObjectOfType<AudioManager>().Play("pote1");
+                    mixtureElem[0]=2;
+                    mixtureElem[1]=3;
+                    mixDT.cookMix(mixtureElem);
                 }
                 if(frasco2==getClickedObject(out  hit)){
+                    Debug.Log(mixtureElem[1].ToString());
                     
                 }
                 if(frasco3==getClickedObject(out  hit)){

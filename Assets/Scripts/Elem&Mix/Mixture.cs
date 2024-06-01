@@ -14,5 +14,20 @@ public class Mixture
         this.name=name;
     }
 
+    public int[] getElem
+    {
+        get{return new int[] {requiredEl[0],requiredEl[1],requiredEl[2]};}
+    }
+
+    public int getElemID
+    {
+        get{return mixId;}
+    }
+    
+    public string getElemName
+    {
+        get{return name;}
+    }
+
 
 }
