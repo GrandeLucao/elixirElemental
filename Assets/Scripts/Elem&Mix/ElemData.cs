@@ -14,10 +14,10 @@ public class ElemData : MonoBehaviour
             new Elements(1,"Carbono","C"),
             new Elements(2,"Hidrogenio","H"),
             new Elements(3,"Oxigenio","O"),
-            new Elements(4,"Nitrogenio","N"),
+            new Elements(4,"Calcio","N"),
             new Elements(5,"Cloro","Cl"),
             new Elements(6,"Sodio","Na"),
-            new Elements(7,"Calcio","Ca"),
+            new Elements(7,"Nitrogenio","Ca"),
         };
         
         foreach(var elem in element){Debug.Log(elem.name.ToString());}

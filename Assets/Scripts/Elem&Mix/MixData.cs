@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MixData : MonoBehaviour
 {
+    public Clients client;
     public List<Mixture> mixes=new List<Mixture>();
     
     void Awake(){BuildMDT();}
@@ -12,18 +13,10 @@ public class MixData : MonoBehaviour
         mixes=new List<Mixture>()
         {
             new Mixture(0,"Agua",new int[]{2,3,0}),
-            new Mixture(1,"caca",new int[]{2,3,0}),
-            new Mixture(2,"cece",new int[]{2,3,0}),
-            new Mixture(3,"cici",new int[]{2,3,0}),
-            new Mixture(4,"coco",new int[]{2,3,0}),
-            new Mixture(5,"cucu",new int[]{2,3,0}),
-            new Mixture(6,"arara",new int[]{2,3,0}),
-            new Mixture(7,"erere",new int[]{2,3,0}),
-            new Mixture(8,"iriri",new int[]{2,3,0}),
-            new Mixture(9,"ororo",new int[]{2,3,0}),
-            new Mixture(10,"ururu",new int[]{2,3,0})
-
-
+            new Mixture(1,"Dioxido de Cabono",new int[]{1,3,0}),
+            new Mixture(2,"Metano",new int[]{1,2,0}),
+            new Mixture(3,"Etanol",new int[]{1,2,3}),
+            new Mixture(4,"Carbonato de Calcio",new int[]{4,1,3})
         };
     }
 
@@ -32,15 +25,18 @@ public class MixData : MonoBehaviour
         foreach(var mix in mixes){
             if(isSameMix(mixReady, mix.getElem))
             {
-                Debug.Log("DEu boa"+ mix.getElemName.ToString());
+                client.CompareMix(mix.getElem);
+                return;
             }
         }
+
+        //Dunno, explode here or something
 
     }
 
     public bool isSameMix(int[] playaMix, int[] dtMix)
     {
-        if(playaMix.Length!=dtMix.Length){Debug.Log("DEu ruim pacas");return false;}
+        if(playaMix.Length!=dtMix.Length){return false;}
 
         System.Array.Sort(playaMix);
         System.Array.Sort(dtMix);
@@ -48,7 +44,6 @@ public class MixData : MonoBehaviour
         for(var i=0;i<playaMix.Length;i++){
             if(playaMix[i]!=dtMix[i])
             {
-                Debug.Log("DEu ruim");
                 return false;
             }
         }
