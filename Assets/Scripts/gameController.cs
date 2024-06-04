@@ -10,7 +10,7 @@ public class gameController : MonoBehaviour
 
     public float TimeLeft;
     public bool TimerOn=false;
-    public Text TimerTxt;
+    public Slider timeSlider;
     
     void Awake()
     {
@@ -19,7 +19,9 @@ public class gameController : MonoBehaviour
 
     void Start()
     {
-              
+        timeSlider.maxValue=TimeLeft;
+        timeSlider.value=TimeLeft;
+
     }
 
 
@@ -46,7 +48,7 @@ public class gameController : MonoBehaviour
         currentTime+=1;
         float minutes=Mathf.FloorToInt(currentTime/60);
         float seconds=Mathf.FloorToInt(currentTime%60);
-        TimerTxt.text=string.Format("{0:00} : {1:00}", minutes, seconds);
+        timeSlider.value=TimeLeft;
 
     }
 
