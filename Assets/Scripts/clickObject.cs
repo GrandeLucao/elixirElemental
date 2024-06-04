@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 public class clickObject : MonoBehaviour
 {
     public MixData mixDT;
-    public int[] mixtureElem=new int[]{2,0,0};
+    public int[] mixtureElem=new int[]{0,0,0};
     public GameObject frasco1,frasco2,frasco3,frasco4;
     
     void Start()
