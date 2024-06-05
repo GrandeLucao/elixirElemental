@@ -11,6 +11,8 @@ public class gameController : MonoBehaviour
     public float TimeLeft;
     public bool TimerOn=false;
     public Slider timeSlider;
+
+    public GameObject pauseScreen, pauseButton;
     
     void Awake()
     {
@@ -52,5 +54,23 @@ public class gameController : MonoBehaviour
 
     }
 
-    //Timer, sceneManager
+    public void GamePause()
+    {
+        TimerOn=false;
+        pauseScreen.SetActive(true);
+        pauseButton.SetActive(false);
+    }
+
+    public void GameUnpause()
+    {
+        TimerOn=true;
+        pauseScreen.SetActive(false);
+        pauseButton.SetActive(true);
+    }
+    
+    public void MenuGo()
+    {
+            SceneManager.LoadScene(1);    
+    }
+
 }

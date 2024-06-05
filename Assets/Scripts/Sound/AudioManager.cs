@@ -38,7 +38,7 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        if(lvln==0)
+        if(lvln==2)
             Play("BGM");
     }
 
