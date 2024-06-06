@@ -38,8 +38,8 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        if(lvln==2)
-            Play("BGM");
+        if(lvln==2){
+            Play("BGM");}
     }
 
     public void Play (string name)
