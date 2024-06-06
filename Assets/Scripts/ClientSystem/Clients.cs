@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Clients : MonoBehaviour
 {
     public MixData mixDT;  
     public int clientID=0;
     Mixture client;
+    public Text order;
     
     void Start()
     {
@@ -26,7 +28,7 @@ public class Clients : MonoBehaviour
         }
 
         client=mixDT.GetMix(chooseID);
-        Debug.Log(client.getElemName); 
+        order.text=("Preciso de "+client.getElemName);
         gameController.instance.TimerOn=true;  
 
     }
