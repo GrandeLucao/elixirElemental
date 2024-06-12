@@ -9,6 +9,7 @@ public class Clients : MonoBehaviour
     public int clientID=0;
     Mixture client;
     public Text order;
+    public GameObject errorButton;
     
     void Start()
     {
@@ -36,15 +37,21 @@ public class Clients : MonoBehaviour
     public void CompareMix(int[] playaMix){
         if(mixDT.isSameMix(playaMix, client.getElem)){
             gameController.instance.TimerOn=false; 
-            gameController.instance.TimeLeft=200f; 
+            gameController.instance.TimeLeft=60f; 
             Debug.Log("Obrigado por fazer "+client.getElemName);  
             clientID++;
             ChooseMix();
         }else{
-            Debug.Log("Ei seu panaca, eu pedi "+client.getElemName+"."); 
+            FailedMix();
+        }
+    }
+
+    public void FailedMix(){
+            FindObjectOfType<AudioManager>().Play("error");
+            errorButton.GetComponent<Animator>().Play("error");
             gameController.instance.TimeLeft-=15f;
 
-        }
+
     }
 
 }

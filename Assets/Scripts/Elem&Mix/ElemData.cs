@@ -14,28 +14,23 @@ public class ElemData : MonoBehaviour
             new Elements(1,"Carbono","C"),
             new Elements(2,"Hidrogenio","H"),
             new Elements(3,"Oxigenio","O"),
-            new Elements(4,"Calcio","N"),
+            new Elements(4,"Calcio","Ca"),
             new Elements(5,"Cloro","Cl"),
             new Elements(6,"Sodio","Na"),
-            new Elements(7,"Nitrogenio","Ca"),
+            new Elements(7,"Nitrogenio","N"),
         };
-        
-        foreach(var elem in element){Debug.Log(elem.name.ToString());}
     }
 
-    public Elements GetElemId(int id)
-    {
-        return element.Find(elem=> elem.id==id);
+    public string GetNameByID(int IDtoFind){
+        foreach(var elem in element){
+            if(IDtoFind==elem.getElemID){
+                string elemName=elem.getElemDesc;
+                return elemName;
+            }
+        }
+        return null;
     }
 
-    public Elements GetElemName(string name)
-    {
-        return element.Find(elem=> elem.name==name);
-    }
 
-    public Elements GetElemDesc(string desc)
-    {
-        return element.Find(elem=> elem.desc==desc);
-    }
     
 }

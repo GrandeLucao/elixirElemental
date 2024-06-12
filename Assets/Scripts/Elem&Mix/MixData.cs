@@ -29,8 +29,8 @@ public class MixData : MonoBehaviour
                 return;
             }
         }
+        client.FailedMix();
 
-        //Dunno, explode here or something
 
     }
 
@@ -65,6 +65,8 @@ public class MixData : MonoBehaviour
         }
 
     }
+
+
 
     
 

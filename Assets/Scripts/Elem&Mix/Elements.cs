@@ -19,5 +19,20 @@ public class Elements
         this.name=elem.name;
         this.desc=elem.desc;
     }
+
+    public int getElemID
+    {
+        get{return id;}
+    }
+    
+    public string getElemName
+    {
+        get{return name;}
+    }
+
+    public string getElemDesc
+    {
+        get{return desc;}
+    }
     
 }
