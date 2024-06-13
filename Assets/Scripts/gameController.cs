@@ -12,7 +12,7 @@ public class gameController : MonoBehaviour
     public bool TimerOn=false;
     public Slider timeSlider;
 
-    public GameObject pauseScreen, pauseButton;
+    public GameObject pauseScreen, pauseButton, gameOverObj;
     
     void Awake()
     {
@@ -40,6 +40,7 @@ public class gameController : MonoBehaviour
             else{
                 TimeLeft=0;
                 TimerOn=false;
+                GameOver();
             }
         }
         
@@ -67,10 +68,22 @@ public class gameController : MonoBehaviour
         pauseScreen.SetActive(false);
         pauseButton.SetActive(true);
     }
+
+    public void GameOver()
+    {
+        FindObjectOfType<AudioManager>().Stop("BGM");        
+        gameOverObj.SetActive(true);
+    }
     
     public void MenuGo()
     {
             SceneManager.LoadScene(1);    
+    }
+
+    public void Restart()
+    {
+            int lvl=SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(lvl);        
     }
 
 }
