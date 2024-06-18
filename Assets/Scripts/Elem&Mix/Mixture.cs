@@ -16,7 +16,7 @@ public class Mixture
 
     public int[] getElem
     {
-        get{return new int[] {requiredEl[0],requiredEl[1],requiredEl[2]};}
+        get{return requiredEl;}
     }
 
     public int getElemID
